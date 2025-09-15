@@ -17,15 +17,15 @@ export default function Home() {
 
   return (
     <>
-      <Header />     
+      <Header />
 
       <Container component='section' maxWidth='md' sx={{ paddingY: '96px' }}>
-        <Box component='div' sx={{ textAlign: 'center'}}>
+        <Box component='div' sx={{ textAlign: 'center' }}>
           <Typography component='h1' variant='h3' sx={{ fontWeight: 'bold' }}>
             GUSTAVO BODZIAK
           </Typography>
 
-          <Typography component='span' sx={{ color: '#EAB308', display: 'block', marginY: '18px'}}>
+          <Typography component='span' sx={{ color: '#EAB308', display: 'block', marginY: '18px' }}>
             Estudante | Next.js · React · Node · MongoDB
           </Typography>
 
@@ -39,6 +39,79 @@ export default function Home() {
             Projetos
           </Button>
         </Box>
+      </Container>
+
+      <Container component='section' maxWidth={false} sx={{ paddingY: '96px', backgroundColor: theme.palette.primary.main }}>
+        <Container component='div' maxWidth='lg'>
+          <Typography component='h2' sx={{ marginBottom: '30px' }}>
+            <Typography component='span' variant='h3'
+              sx={{
+                color: 'white',
+                fontWeight: 'bold',
+                fontSize: '42px',
+                marginRight: '15px',
+                display: 'inline-block'
+              }}
+            >
+              Sobre
+            </Typography>
+            <Typography component='span' variant='h3'
+              sx={{
+                color: theme.palette.secondary.main,
+                fontWeight: 'bold',
+                fontSize: '42px'
+              }}>
+              Mim
+            </Typography>
+          </Typography>
+
+          <Typography component='p'
+            sx={{
+              marginBottom: '15px',
+              color: theme.palette.text.secondary,
+              width: '470px',
+              lineHeight: '28px'
+            }}>
+            There are many variations of passages ofLorem Ipsum
+            available, but the majority havesuffered alteration in some
+            form, by injected humour,
+          </Typography>
+
+          <Typography component='p'
+            sx={{
+              color: theme.palette.text.secondary,
+              width: '470px',
+              lineHeight: '28px'
+            }}>
+            Passages ofLorem Ipsumavailable, but the majority havesuffered
+            alteration in some form, by injected humour,
+          </Typography>
+
+          <Box component='div'>
+            <Button size='large'
+              sx={{
+                backgroundColor: theme.palette.secondary.main,
+                color: 'white',
+                textTransform: 'none',
+                fontWeight: '400',
+                marginTop: '30px',
+                marginRight: '30px'
+              }}>
+              Contato
+            </Button>
+
+            <Button size='large'
+              sx={{
+                backgroundColor: theme.palette.secondary.main,
+                color: 'white',
+                textTransform: 'none',
+                fontWeight: '400',
+                marginTop: '30px'
+              }}>
+              Currículo
+            </Button>
+          </Box>
+        </Container>
       </Container>
 
     </>
