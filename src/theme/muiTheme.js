@@ -23,6 +23,9 @@ const theme = createTheme({
         text: {
             primary: '#000000',
             secondary: '#6B7280'
+        },
+        background: {
+            card: '#0B0B0B'
         }
     }
 })

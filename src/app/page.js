@@ -1,6 +1,7 @@
 'use client'
 
 import Header from "@/components/Header";
+import { ReactIcon } from "@/theme/icons";
 
 import { useTheme } from '@mui/material/styles';
 
@@ -8,6 +9,8 @@ import {
   Box,
   Button,
   Container,
+  Card,
+  CardContent,
   Typography
 } from '@mui/material'
 
@@ -112,6 +115,110 @@ export default function Home() {
             </Button>
           </Box>
         </Container>
+      </Container>
+
+      <Container component='section' maxWidth='lg' sx={{ paddingY: '96px' }}>
+        <Box component='div' sx={{ textAlign: 'center' }}>
+          <Typography component='h1' variant='h3'
+            sx={{
+              fontWeight: 'bold',
+              fontSize: '42px',
+              marginBottom: '30px'
+            }}
+          >
+            Habilidades
+          </Typography>
+
+          <Typography component='p' sx={{ color: theme.palette.text.secondary, width: '470px', margin: '0 auto', lineHeight: '28px' }}>
+            There are many variations of passages ofLorem Ipsum
+            available, but the majority havesuffered alteration in some
+            form, by injected humour,
+          </Typography>
+        </Box>
+
+        <Box component='div' sx={{ display: 'flex', justifyContent: 'space-between', marginTop: '56px' }}>
+          <Card 
+            sx={{ backgroundColor: theme.palette.background.card, 
+                  textAlign: 'center',
+                  padding: '32px',
+                  width: '50% ',
+                  borderRadius: '10px'
+            }}
+          >
+            <ReactIcon sx={{ color: theme.palette.secondary.main, fontSize: 80 }} />
+
+            <Typography component='h3' 
+              sx={{ color: 'white', 
+                    fontSize: 26, 
+                    fontWeight: 'bold', 
+                    marginBottom: '12px' 
+              }}
+            >
+              Next.js
+            </Typography>
+
+            <Typography component='p' sx={{ color: theme.palette.text.secondary,  margin: '0 auto', lineHeight: '28px' }}>
+              There are many variations of passages ofLorem Ipsum
+              available, but the majority havesuffered alteration in some
+              form, by injected humour,
+            </Typography>
+          </Card>
+
+           <Card 
+            sx={{ backgroundColor: theme.palette.background.card, 
+                  textAlign: 'center',
+                  padding: '32px',
+                  width: '50% ',
+                  marginX: '30px',
+                  borderRadius: '10px'
+            }}
+          >
+            <ReactIcon sx={{ color: theme.palette.secondary.main, fontSize: 80 }} />
+
+            <Typography component='h3' 
+              sx={{ color: 'white', 
+                    fontSize: 26, 
+                    fontWeight: 'bold', 
+                    marginBottom: '12px' 
+              }}
+            >
+              Next.js
+            </Typography>
+
+            <Typography component='p' sx={{ color: theme.palette.text.secondary,  margin: '0 auto', lineHeight: '28px' }}>
+              There are many variations of passages ofLorem Ipsum
+              available, but the majority havesuffered alteration in some
+              form, by injected humour,
+            </Typography>
+          </Card>
+
+           <Card 
+            sx={{ backgroundColor: theme.palette.background.card, 
+                  textAlign: 'center',
+                  padding: '32px',
+                  width: '50% ',
+                  borderRadius: '10px'
+            }}
+          >
+            <ReactIcon sx={{ color: theme.palette.secondary.main, fontSize: 80 }} />
+
+            <Typography component='h3' 
+              sx={{ color: 'white', 
+                    fontSize: 26, 
+                    fontWeight: 'bold', 
+                    marginBottom: '12px' 
+              }}
+            >
+              Next.js
+            </Typography>
+
+            <Typography component='p' sx={{ color: theme.palette.text.secondary,  margin: '0 auto', lineHeight: '28px' }}>
+              There are many variations of passages ofLorem Ipsum
+              available, but the majority havesuffered alteration in some
+              form, by injected humour,
+            </Typography>
+          </Card>
+        </Box>
       </Container>
 
     </>
