@@ -1,7 +1,6 @@
 'use client'
 
 import Header from "@/components/Header";
-import { ReactIcon } from "@/theme/icons";
 
 import { useTheme } from '@mui/material/styles';
 
@@ -10,9 +9,12 @@ import {
   Button,
   Container,
   Card,
-  CardContent,
   Typography
 } from '@mui/material'
+
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
 
 export default function Home() {
 
@@ -145,7 +147,7 @@ export default function Home() {
                   borderRadius: '10px'
             }}
           >
-            <ReactIcon sx={{ color: theme.palette.secondary.main, fontSize: 80 }} />
+            <RiNextjsFill size={50} color={theme.palette.secondary.main}/>
 
             <Typography component='h3' 
               sx={{ color: 'white', 
@@ -173,7 +175,7 @@ export default function Home() {
                   borderRadius: '10px'
             }}
           >
-            <ReactIcon sx={{ color: theme.palette.secondary.main, fontSize: 80 }} />
+            <FaReact size={50} color={theme.palette.secondary.main}/>
 
             <Typography component='h3' 
               sx={{ color: 'white', 
@@ -182,7 +184,7 @@ export default function Home() {
                     marginBottom: '12px' 
               }}
             >
-              Next.js
+              React
             </Typography>
 
             <Typography component='p' sx={{ color: theme.palette.text.secondary,  margin: '0 auto', lineHeight: '28px' }}>
@@ -200,7 +202,7 @@ export default function Home() {
                   borderRadius: '10px'
             }}
           >
-            <ReactIcon sx={{ color: theme.palette.secondary.main, fontSize: 80 }} />
+            <FaNodeJs size={50} color={theme.palette.secondary.main}/>
 
             <Typography component='h3' 
               sx={{ color: 'white', 
@@ -209,7 +211,7 @@ export default function Home() {
                     marginBottom: '12px' 
               }}
             >
-              Next.js
+              Node
             </Typography>
 
             <Typography component='p' sx={{ color: theme.palette.text.secondary,  margin: '0 auto', lineHeight: '28px' }}>
