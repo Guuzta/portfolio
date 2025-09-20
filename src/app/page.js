@@ -11,12 +11,15 @@ import {
   Card,
   CardMedia,
   CardContent,
-  Typography
+  Typography,
+  Link
 } from '@mui/material'
 
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
 
@@ -424,6 +427,75 @@ export default function Home() {
           </Card>
 
         </Container>
+
+      </Container>
+
+      <Container component='section' maxWidth='lg' sx={{ paddingY: '96px' }}>
+        <Box component='div' sx={{ textAlign: 'center' }}>
+          <Typography component='h2' variant='h3'
+            sx={{
+              fontWeight: 'bold',
+              fontSize: '42px',
+              marginBottom: '30px'
+            }}
+          >
+            Contato
+          </Typography>
+
+          <Typography component='p' sx={{ color: theme.palette.text.secondary, width: '470px', margin: '0 auto', lineHeight: '28px' }}>
+            There are many variations of passages ofLorem Ipsum
+            available, but the majority havesuffered alteration in some
+            form, by injected humour,
+          </Typography>
+        </Box>
+
+
+        <Box component='nav' display='flex' alignItems='center' justifyContent='center' gap='50px' sx={{ marginTop: '56px' }}>
+
+          <Link
+            href='https://www.linkedin.com/in/gustavobodziak/'
+            target='_blank'
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
+              textDecoration: 'none',
+              "&:hover": {
+                "& .MuiTypography-root": {
+                  color: '#0077B5'
+                }
+              }
+            }}
+          >
+            <FaLinkedin size={30} color='#0077B5' />
+
+            <Typography component='span' sx={{ transition: 'all 300ms ease', color: theme.palette.text.secondary }}>
+              Linkedin
+            </Typography>
+          </Link>
+
+          <Link
+            href='https://github.com/Guuzta'
+            target='_blank'
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
+              textDecoration: 'none',
+              "&:hover": {
+                "& .MuiTypography-root": {
+                  color: 'black'
+                }
+              }
+            }}
+          >
+            <FaGithub size={30} />
+
+            <Typography component='span' sx={{ transition: 'all 300ms ease', color: theme.palette.text.secondary }}>
+              GitHub
+            </Typography>
+          </Link>
+        </Box>
 
       </Container>
 
