@@ -1,6 +1,7 @@
 'use client'
 
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 import { useTheme } from '@mui/material/styles';
 
@@ -499,6 +500,7 @@ export default function Home() {
 
       </Container>
 
+      <Footer/>
     </>
   );
 }
