@@ -9,6 +9,8 @@ import {
   Button,
   Container,
   Card,
+  CardMedia,
+  CardContent,
   Typography
 } from '@mui/material'
 
@@ -139,88 +141,290 @@ export default function Home() {
         </Box>
 
         <Box component='div' sx={{ display: 'flex', justifyContent: 'space-between', marginTop: '56px' }}>
-          <Card 
-            sx={{ backgroundColor: theme.palette.background.card, 
-                  textAlign: 'center',
-                  padding: '32px',
-                  width: '50% ',
-                  borderRadius: '10px'
+          <Card
+            sx={{
+              backgroundColor: theme.palette.background.card,
+              textAlign: 'center',
+              padding: '32px',
+              width: '50% ',
+              borderRadius: '10px'
             }}
           >
-            <RiNextjsFill size={50} color={theme.palette.secondary.main}/>
+            <RiNextjsFill size={50} color={theme.palette.secondary.main} />
 
-            <Typography component='h3' 
-              sx={{ color: 'white', 
-                    fontSize: 26, 
-                    fontWeight: 'bold', 
-                    marginBottom: '12px' 
+            <Typography component='h3'
+              sx={{
+                color: 'white',
+                fontSize: 26,
+                fontWeight: 'bold',
+                marginBottom: '12px'
               }}
             >
               Next.js
             </Typography>
 
-            <Typography component='p' sx={{ color: theme.palette.text.secondary,  margin: '0 auto', lineHeight: '28px' }}>
+            <Typography component='p' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px' }}>
               There are many variations of passages ofLorem Ipsum
               available, but the majority havesuffered alteration in some
               form, by injected humour,
             </Typography>
           </Card>
 
-           <Card 
-            sx={{ backgroundColor: theme.palette.background.card, 
-                  textAlign: 'center',
-                  padding: '32px',
-                  width: '50% ',
-                  marginX: '30px',
-                  borderRadius: '10px'
+          <Card
+            sx={{
+              backgroundColor: theme.palette.background.card,
+              textAlign: 'center',
+              padding: '32px',
+              width: '50% ',
+              marginX: '30px',
+              borderRadius: '10px'
             }}
           >
-            <FaReact size={50} color={theme.palette.secondary.main}/>
+            <FaReact size={50} color={theme.palette.secondary.main} />
 
-            <Typography component='h3' 
-              sx={{ color: 'white', 
-                    fontSize: 26, 
-                    fontWeight: 'bold', 
-                    marginBottom: '12px' 
+            <Typography component='h3'
+              sx={{
+                color: 'white',
+                fontSize: 26,
+                fontWeight: 'bold',
+                marginBottom: '12px'
               }}
             >
               React
             </Typography>
 
-            <Typography component='p' sx={{ color: theme.palette.text.secondary,  margin: '0 auto', lineHeight: '28px' }}>
+            <Typography component='p' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px' }}>
               There are many variations of passages ofLorem Ipsum
               available, but the majority havesuffered alteration in some
               form, by injected humour,
             </Typography>
           </Card>
 
-           <Card 
-            sx={{ backgroundColor: theme.palette.background.card, 
-                  textAlign: 'center',
-                  padding: '32px',
-                  width: '50% ',
-                  borderRadius: '10px'
+          <Card
+            sx={{
+              backgroundColor: theme.palette.background.card,
+              textAlign: 'center',
+              padding: '32px',
+              width: '50% ',
+              borderRadius: '10px'
             }}
           >
-            <FaNodeJs size={50} color={theme.palette.secondary.main}/>
+            <FaNodeJs size={50} color={theme.palette.secondary.main} />
 
-            <Typography component='h3' 
-              sx={{ color: 'white', 
-                    fontSize: 26, 
-                    fontWeight: 'bold', 
-                    marginBottom: '12px' 
+            <Typography component='h3'
+              sx={{
+                color: 'white',
+                fontSize: 26,
+                fontWeight: 'bold',
+                marginBottom: '12px'
               }}
             >
               Node
             </Typography>
 
-            <Typography component='p' sx={{ color: theme.palette.text.secondary,  margin: '0 auto', lineHeight: '28px' }}>
+            <Typography component='p' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px' }}>
               There are many variations of passages ofLorem Ipsum
               available, but the majority havesuffered alteration in some
               form, by injected humour,
             </Typography>
           </Card>
         </Box>
+      </Container>
+
+      <Container component='section' maxWidth={false} sx={{ paddingY: '96px', backgroundColor: theme.palette.primary.main }}>
+        <Container component='div' maxWidth='lg'>
+          <Box component='div' sx={{ textAlign: 'center' }}>
+            <Typography component='h2' sx={{ marginBottom: '30px' }}>
+              <Typography component='span' variant='h3'
+                sx={{
+                  color: 'white',
+                  fontWeight: 'bold',
+                  fontSize: '42px',
+                  marginRight: '15px',
+                  display: 'inline-block'
+                }}
+              >
+                Meus
+              </Typography>
+              <Typography component='span' variant='h3'
+                sx={{
+                  color: theme.palette.secondary.main,
+                  fontWeight: 'bold',
+                  fontSize: '42px'
+                }}>
+                Projetos
+              </Typography>
+            </Typography>
+
+            <Typography component='p' sx={{ color: theme.palette.text.secondary, width: '700px', margin: '0 auto', lineHeight: '28px' }}>
+              There are many variations of passages ofLorem Ipsum
+              available, but the majority havesuffered alteration in some
+              form, by injected humour,
+            </Typography>
+          </Box>
+
+          <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginTop: '100px', marginBottom: '180px', display: 'flex', justifyContent: 'space-between' }}>
+            <CardMedia
+              component='img'
+              height="250"
+              image="/images/notebook.png"
+              title="green iguana"
+              sx={{ width: 'fit-content' }}
+            />
+
+            <CardContent sx={{ width: '50%' }}>
+              <Typography component='h3'
+                sx={{
+                  color: 'white',
+                  fontSize: 26,
+                  fontWeight: 'bold',
+                  marginBottom: '12px'
+                }}
+              >
+                Projeto de exemplo
+              </Typography>
+
+              <Typography component='p' sx={{ color: theme.palette.text.secondary, lineHeight: '28px' }}>
+                There are many variations of passages ofLorem Ipsum
+                available, but the majority havesuffered alteration in some
+                form, by injected humour,
+              </Typography>
+
+              <Button size='large'
+                sx={{
+                  backgroundColor: theme.palette.secondary.main,
+                  color: 'white',
+                  textTransform: 'none',
+                  fontWeight: '400',
+                  marginTop: '30px'
+                }}>
+                Estudo de caso
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginY: '180px', display: 'flex', justifyContent: 'space-between' }}>
+            <CardMedia
+              component='img'
+              height="250"
+              image="/images/notebook.png"
+              title="green iguana"
+              sx={{ width: 'fit-content' }}
+            />
+
+            <CardContent sx={{ width: '50%' }}>
+              <Typography component='h3'
+                sx={{
+                  color: 'white',
+                  fontSize: 26,
+                  fontWeight: 'bold',
+                  marginBottom: '12px'
+                }}
+              >
+                Projeto de exemplo
+              </Typography>
+
+              <Typography component='p' sx={{ color: theme.palette.text.secondary, lineHeight: '28px' }}>
+                There are many variations of passages ofLorem Ipsum
+                available, but the majority havesuffered alteration in some
+                form, by injected humour,
+              </Typography>
+
+              <Button size='large'
+                sx={{
+                  backgroundColor: theme.palette.secondary.main,
+                  color: 'white',
+                  textTransform: 'none',
+                  fontWeight: '400',
+                  marginTop: '30px'
+                }}>
+                Estudo de caso
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginY: '180px', display: 'flex', justifyContent: 'space-between' }}>
+            <CardMedia
+              component='img'
+              height="250"
+              image="/images/notebook.png"
+              title="green iguana"
+              sx={{ width: 'fit-content' }}
+            />
+
+            <CardContent sx={{ width: '50%' }}>
+              <Typography component='h3'
+                sx={{
+                  color: 'white',
+                  fontSize: 26,
+                  fontWeight: 'bold',
+                  marginBottom: '12px'
+                }}
+              >
+                Projeto de exemplo
+              </Typography>
+
+              <Typography component='p' sx={{ color: theme.palette.text.secondary, lineHeight: '28px' }}>
+                There are many variations of passages ofLorem Ipsum
+                available, but the majority havesuffered alteration in some
+                form, by injected humour,
+              </Typography>
+
+              <Button size='large'
+                sx={{
+                  backgroundColor: theme.palette.secondary.main,
+                  color: 'white',
+                  textTransform: 'none',
+                  fontWeight: '400',
+                  marginTop: '30px'
+                }}>
+                Estudo de caso
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginTop: '180px', display: 'flex', justifyContent: 'space-between' }}>
+            <CardMedia
+              component='img'
+              height="250"
+              image="/images/notebook.png"
+              title="green iguana"
+              sx={{ width: 'fit-content' }}
+            />
+
+            <CardContent sx={{ width: '50%' }}>
+              <Typography component='h3'
+                sx={{
+                  color: 'white',
+                  fontSize: 26,
+                  fontWeight: 'bold',
+                  marginBottom: '12px'
+                }}
+              >
+                Projeto de exemplo
+              </Typography>
+
+              <Typography component='p' sx={{ color: theme.palette.text.secondary, lineHeight: '28px' }}>
+                There are many variations of passages ofLorem Ipsum
+                available, but the majority havesuffered alteration in some
+                form, by injected humour,
+              </Typography>
+
+              <Button size='large'
+                sx={{
+                  backgroundColor: theme.palette.secondary.main,
+                  color: 'white',
+                  textTransform: 'none',
+                  fontWeight: '400',
+                  marginTop: '30px'
+                }}>
+                Estudo de caso
+              </Button>
+            </CardContent>
+          </Card>
+
+        </Container>
+
       </Container>
 
     </>
