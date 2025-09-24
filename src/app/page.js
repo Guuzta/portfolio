@@ -40,10 +40,8 @@ export default function Home() {
             Estudante | Next.js · React · Node · MongoDB
           </Typography>
 
-          <Typography component='p' sx={{ color: theme.palette.text.secondary, width: '470px', margin: '0 auto', lineHeight: '28px' }}>
-            There are many variations of passages ofLorem Ipsum
-            available, but the majority havesuffered alteration in some
-            form, by injected humour,
+          <Typography component='p' sx={{ color: theme.palette.text.secondary, lineHeight: '28px' }}>
+            Tenho experiência desenvolvendo aplicações web completas, utilizando Next.js no Frontend para criar interfaces modernas, responsivas e intuitivas, garantindo uma ótima experiência para o usuário. No Backend, trabalho com Node.js e MongoDB, implementando a lógica das aplicações, cuidando da estrutura de dados e garantindo que tudo funcione de forma integrada e eficiente.
           </Typography>
 
           <Button size='large' sx={{ backgroundColor: theme.palette.secondary.main, textTransform: 'none', fontWeight: '400', marginTop: '20px' }}>
@@ -500,7 +498,7 @@ export default function Home() {
 
       </Container>
 
-      <Footer/>
+      <Footer />
     </>
   );
 }
