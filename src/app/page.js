@@ -78,37 +78,33 @@ export default function Home() {
             sx={{
               marginBottom: '15px',
               color: theme.palette.text.secondary,
-              width: '470px',
+              width: '50%',
               lineHeight: '28px'
             }}>
-            There are many variations of passages ofLorem Ipsum
-            available, but the majority havesuffered alteration in some
-            form, by injected humour,
+            Sou estudante de Análise e Desenvolvimento de Sistemas e estou dando meus primeiros passos no mercado de tecnologia, em busca da minha primeira oportunidade.
           </Typography>
 
           <Typography component='p'
             sx={{
+              marginBottom: '15px',
               color: theme.palette.text.secondary,
-              width: '470px',
+              width: '50%',
               lineHeight: '28px'
             }}>
-            Passages ofLorem Ipsumavailable, but the majority havesuffered
-            alteration in some form, by injected humour,
+            Sou apaixonado por construir soluções completas e estou constantemente expandindo meus conhecimentos para me tornar um desenvolvedor. Estou aberto a oportunidades em que eu possa contribuir, aprender e crescer.
+          </Typography>
+
+          <Typography component='p'
+            sx={{
+              marginBottom: '15px',
+              color: theme.palette.text.secondary,
+              width: '50%',
+              lineHeight: '28px'
+            }}>
+            Para conhecer mais sobre minha experiência, habilidades e projetos, você pode conferir meu currículo completo no botão abaixo, onde reuni detalhes sobre minhas experiências práticas, tecnologias que domino e resultados alcançados em pequenos projetos web.
           </Typography>
 
           <Box component='div'>
-            <Button size='large'
-              sx={{
-                backgroundColor: theme.palette.secondary.main,
-                color: 'white',
-                textTransform: 'none',
-                fontWeight: '400',
-                marginTop: '30px',
-                marginRight: '30px'
-              }}>
-              Contato
-            </Button>
-
             <Button size='large'
               sx={{
                 backgroundColor: theme.palette.secondary.main,
