@@ -2,6 +2,7 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SkillCard from "@/components/SkillCard";
 
 import { useTheme } from '@mui/material/styles';
 
@@ -21,6 +22,9 @@ import { RiNextjsFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
+import { SiPostman } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
 
 export default function Home() {
 
@@ -131,101 +135,63 @@ export default function Home() {
             Habilidades
           </Typography>
 
-          <Typography component='p' sx={{ color: theme.palette.text.secondary, width: '470px', margin: '0 auto', lineHeight: '28px' }}>
-            There are many variations of passages ofLorem Ipsum
-            available, but the majority havesuffered alteration in some
-            form, by injected humour,
+          <Typography component='p' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px' }}>
+            Algumas das tecnologias que fazem parte da minha trajetória e que sigo desenvolvendo constantemente.
           </Typography>
         </Box>
 
-        <Box component='div' sx={{ display: 'flex', justifyContent: 'space-between', marginTop: '56px' }}>
-          <Card
-            sx={{
-              backgroundColor: theme.palette.background.card,
-              textAlign: 'center',
-              padding: '32px',
-              width: '50% ',
-              borderRadius: '10px'
-            }}
-          >
-            <RiNextjsFill size={50} color={theme.palette.secondary.main} />
+        <Box component='div'
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginTop: '56px',
+            gap: '30px'
+          }}
+        >
+          <SkillCard
+            Icon={RiNextjsFill}
+            title='Next.js'
+            text='Experiência no desenvolvimento de aplicações modernas com foco em performance, SEO e renderização híbrida (SSR/SSG).'
+          />
 
-            <Typography component='h3'
-              sx={{
-                color: 'white',
-                fontSize: 26,
-                fontWeight: 'bold',
-                marginBottom: '12px'
-              }}
-            >
-              Next.js
-            </Typography>
+          <SkillCard
+            Icon={FaReact}
+            title='React'
+            text='Criação de interfaces dinâmicas e componentizadas, garantindo escalabilidade e boa experiência do usuário.'
+          />
 
-            <Typography component='p' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px' }}>
-              There are many variations of passages ofLorem Ipsum
-              available, but the majority havesuffered alteration in some
-              form, by injected humour,
-            </Typography>
-          </Card>
+          <SkillCard
+            Icon={FaNodeJs}
+            title='Node'
+            text='Desenvolvimento de APIs e backends eficientes, com foco em performance e integração entre serviços.'
+          />
+        </Box>
 
-          <Card
-            sx={{
-              backgroundColor: theme.palette.background.card,
-              textAlign: 'center',
-              padding: '32px',
-              width: '50% ',
-              marginX: '30px',
-              borderRadius: '10px'
-            }}
-          >
-            <FaReact size={50} color={theme.palette.secondary.main} />
+        <Box component='div'
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginTop: '56px',
+            gap: '30px'
+          }}
+        >
+          <SkillCard
+            Icon={FaGitAlt}
+            title='Git'
+            text='Controle de versão e colaboração em equipe, utilizando boas práticas de branchs e versionamento de código.'
+          />
 
-            <Typography component='h3'
-              sx={{
-                color: 'white',
-                fontSize: 26,
-                fontWeight: 'bold',
-                marginBottom: '12px'
-              }}
-            >
-              React
-            </Typography>
+          <SkillCard
+            Icon={SiPostman}
+            title='Postman'
+            text='Testes, validação e documentação de APIs REST, facilitando a integração entre frontend e backend.'
+          />
 
-            <Typography component='p' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px' }}>
-              There are many variations of passages ofLorem Ipsum
-              available, but the majority havesuffered alteration in some
-              form, by injected humour,
-            </Typography>
-          </Card>
-
-          <Card
-            sx={{
-              backgroundColor: theme.palette.background.card,
-              textAlign: 'center',
-              padding: '32px',
-              width: '50% ',
-              borderRadius: '10px'
-            }}
-          >
-            <FaNodeJs size={50} color={theme.palette.secondary.main} />
-
-            <Typography component='h3'
-              sx={{
-                color: 'white',
-                fontSize: 26,
-                fontWeight: 'bold',
-                marginBottom: '12px'
-              }}
-            >
-              Node
-            </Typography>
-
-            <Typography component='p' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px' }}>
-              There are many variations of passages ofLorem Ipsum
-              available, but the majority havesuffered alteration in some
-              form, by injected humour,
-            </Typography>
-          </Card>
+          <SkillCard
+            Icon={IoLogoJavascript}
+            title='JavaScript'
+            text='Conhecimento prático da linguagem para construir aplicações interativas, tanto no frontend quanto no backend.'
+          />
         </Box>
       </Container>
 
