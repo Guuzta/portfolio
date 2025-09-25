@@ -1,5 +1,7 @@
 'use client'
 
+import Link from "next/link";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SkillCard from "@/components/SkillCard";
@@ -14,7 +16,7 @@ import {
   CardMedia,
   CardContent,
   Typography,
-  Link
+  Link as MuiLink,
 } from '@mui/material'
 
 import { FaReact } from "react-icons/fa";
@@ -409,7 +411,7 @@ export default function Home() {
 
         <Box component='nav' display='flex' alignItems='center' justifyContent='center' gap='50px' sx={{ marginTop: '56px' }}>
 
-          <Link
+          <MuiLink
             href='https://www.linkedin.com/in/gustavobodziak/'
             target='_blank'
             sx={{
@@ -429,9 +431,9 @@ export default function Home() {
             <Typography component='span' sx={{ transition: 'all 300ms ease', color: theme.palette.text.secondary }}>
               Linkedin
             </Typography>
-          </Link>
+          </MuiLink>
 
-          <Link
+          <MuiLink
             href='https://github.com/Guuzta'
             target='_blank'
             sx={{
@@ -451,7 +453,7 @@ export default function Home() {
             <Typography component='span' sx={{ transition: 'all 300ms ease', color: theme.palette.text.secondary }}>
               GitHub
             </Typography>
-          </Link>
+          </MuiLink>
         </Box>
 
       </Container>
