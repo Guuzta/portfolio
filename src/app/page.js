@@ -220,10 +220,8 @@ export default function Home() {
               </Typography>
             </Typography>
 
-            <Typography component='p' sx={{ color: theme.palette.text.secondary, width: '700px', margin: '0 auto', lineHeight: '28px' }}>
-              There are many variations of passages ofLorem Ipsum
-              available, but the majority havesuffered alteration in some
-              form, by injected humour,
+            <Typography component='p' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px' }}>
+              Aqui você encontrará alguns projetos que criei ao longo da minha jornada de estudos e aprendizado.
             </Typography>
           </Box>
 
@@ -231,7 +229,7 @@ export default function Home() {
             <CardMedia
               component='img'
               height="250"
-              image="/images/notebook.png"
+              image="/images/primeiroProjeto.png"
               title="green iguana"
               sx={{ width: 'fit-content' }}
             />
@@ -245,13 +243,11 @@ export default function Home() {
                   marginBottom: '12px'
                 }}
               >
-                Projeto de exemplo
+                Contador de Cliques
               </Typography>
 
               <Typography component='p' sx={{ color: theme.palette.text.secondary, lineHeight: '28px' }}>
-                There are many variations of passages ofLorem Ipsum
-                available, but the majority havesuffered alteration in some
-                form, by injected humour,
+                Plataforma onde consiste basicamente em registrar o maior número de cliques feito pelo usuário.
               </Typography>
 
               <Button size='large'
