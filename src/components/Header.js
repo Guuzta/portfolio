@@ -1,6 +1,9 @@
 'use client'
 
 import * as React from 'react';
+
+import Link from 'next/link';
+
 import {
     AppBar,
     Box,
@@ -12,7 +15,7 @@ import {
 
 import { useTheme } from '@mui/material/styles';
 
-const pages = ['HOME', 'SOBRE', 'HABILIDADES', 'PROJETOS', 'CONTATO']
+const pages = ['Home', 'Sobre', 'Habilidades', 'Projetos', 'Contato']
 
 const Header = () => {
 
@@ -20,7 +23,7 @@ const Header = () => {
 
     return (
         <Box sx={{ flexGrow: 1, }}>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <Container maxWidth='lg'>
                     <Toolbar disableGutters>
                         <Box sx={{ flexGrow: 1 }}>
@@ -35,13 +38,28 @@ const Header = () => {
                             </Typography>
                         </Box>
                         {
-                            pages.map(page => (
-                                <MenuItem key={page}>
-                                    <Typography>
-                                        {page}
-                                    </Typography>
-                                </MenuItem>
-                            ))
+                            pages.map(page => {
+
+                                const pageCapital = page.toUpperCase()
+
+                                return (
+                                    <Link href={`/#${page}`} key={page}>
+                                        <MenuItem
+                                            sx={{
+                                                "&:hover": {
+                                                    "& .MuiTypography-root": {
+                                                        color: theme.palette.secondary.main
+                                                    }
+                                                }
+                                            }}
+                                        >
+                                            <Typography sx={{ transition: 'all 300ms ease' }}>
+                                                {pageCapital}
+                                            </Typography>
+                                        </MenuItem>
+                                    </Link>
+                                )
+                            })
                         }
                     </Toolbar>
                 </Container>

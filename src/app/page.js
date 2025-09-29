@@ -36,7 +36,7 @@ export default function Home() {
     <>
       <Header />
 
-      <Container component='section' maxWidth='md' sx={{ paddingY: '96px' }}>
+      <Container id='Home' component='section' maxWidth='md' sx={{ paddingTop: '160px', paddingBottom: '96px' }}>
         <Box component='div' sx={{ textAlign: 'center' }}>
           <Typography component='h1' variant='h3' sx={{ fontWeight: 'bold' }}>
             GUSTAVO BODZIAK
@@ -56,7 +56,7 @@ export default function Home() {
         </Box>
       </Container>
 
-      <Container component='section' maxWidth={false} sx={{ paddingY: '96px', backgroundColor: theme.palette.primary.main }}>
+      <Container id='Sobre' component='section' maxWidth={false} sx={{ paddingY: '96px', backgroundColor: theme.palette.primary.main }}>
         <Container component='div' maxWidth='lg'>
           <Typography component='h2' sx={{ marginBottom: '30px' }}>
             <Typography component='span' variant='h3'
@@ -125,7 +125,7 @@ export default function Home() {
         </Container>
       </Container>
 
-      <Container component='section' maxWidth='lg' sx={{ paddingY: '96px' }}>
+      <Container id='Habilidades' component='section' maxWidth='lg' sx={{ paddingY: '96px' }}>
         <Box component='div' sx={{ textAlign: 'center' }}>
           <Typography component='h1' variant='h3'
             sx={{
@@ -197,7 +197,7 @@ export default function Home() {
         </Box>
       </Container>
 
-      <Container component='section' maxWidth={false} sx={{ paddingY: '96px', backgroundColor: theme.palette.primary.main }}>
+      <Container id='Projetos' component='section' maxWidth={false} sx={{ paddingY: '96px', backgroundColor: theme.palette.primary.main }}>
         <Container component='div' maxWidth='lg'>
           <Box component='div' sx={{ textAlign: 'center' }}>
             <Typography component='h2' sx={{ marginBottom: '30px' }}>
@@ -389,7 +389,7 @@ export default function Home() {
 
       </Container>
 
-      <Container component='section' maxWidth='lg' sx={{ paddingY: '96px' }}>
+      <Container id='Contato' component='section' maxWidth='lg' sx={{ paddingY: '96px' }}>
         <Box component='div' sx={{ textAlign: 'center' }}>
           <Typography component='h2' variant='h3'
             sx={{
