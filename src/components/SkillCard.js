@@ -23,7 +23,7 @@ const SkillCard = ({ Icon, title, text }) => {
             <Typography component='h3'
                 sx={{
                     color: 'white',
-                    fontSize: 26,
+                    fontSize: '35px',
                     fontWeight: 'bold',
                     marginBottom: '12px'
                 }}
@@ -31,7 +31,7 @@ const SkillCard = ({ Icon, title, text }) => {
                 {title}
             </Typography>
 
-            <Typography component='p' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px' }}>
+            <Typography component='p'sx={{ color: theme.palette.text.secondary, margin: '0 auto', fontSize: '18px' }}>
                 {text}
             </Typography>
         </Card>

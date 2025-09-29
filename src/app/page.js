@@ -149,14 +149,13 @@ export default function Home() {
           <Typography component='h1' variant='h3'
             sx={{
               fontWeight: 'bold',
-              fontSize: '42px',
               marginBottom: '30px'
             }}
           >
             Habilidades
           </Typography>
 
-          <Typography component='p' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px' }}>
+          <Typography component='p' variant='h6' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px', fontWeight: '400' }}>
             Algumas das tecnologias que fazem parte da minha trajetória e que sigo desenvolvendo constantemente.
           </Typography>
         </Box>
