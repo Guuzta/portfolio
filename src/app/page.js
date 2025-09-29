@@ -51,22 +51,25 @@ export default function Home() {
             Tenho experiência desenvolvendo aplicações web completas, utilizando Next.js no Frontend para criar interfaces modernas, responsivas e intuitivas, garantindo uma ótima experiência para o usuário. No Backend, trabalho com Node.js e MongoDB, implementando a lógica das aplicações, cuidando da estrutura de dados e garantindo que tudo funcione de forma integrada e eficiente.
           </Typography>
 
-          <Button size='large'
-            sx={{
-              backgroundColor: theme.palette.secondary.main,
-              textTransform: 'none',
-              fontSize: '17px',
-              paddingY: '15px',
-              paddingX: '20px',
-              marginTop: '40px',
-              '&:hover': {
-                backgroundColor: theme.palette.secondary.hover,
-                transition: 'all 300ms ease'
-              }
-            }}
-          >
-            PROJETOS
-          </Button>
+          <Link href='/#Projetos'>
+            <Button size='large'
+              sx={{
+                backgroundColor: theme.palette.secondary.main,
+                textTransform: 'none',
+                fontSize: '17px',
+                paddingY: '15px',
+                paddingX: '20px',
+                marginTop: '40px',
+                '&:hover': {
+                  backgroundColor: theme.palette.secondary.hover,
+                  transition: 'all 300ms ease'
+                }
+              }}
+            >
+              PROJETOS
+            </Button>
+          </Link>
+
         </Box>
       </Container>
 
@@ -253,7 +256,7 @@ export default function Home() {
               sx={{ width: 'fit-content' }}
             />
 
-            <Box sx={{ display: 'flex', flexDirection:'column', justifyContent: 'center', width: '50%', paddingY: '0' }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '50%', paddingY: '0' }}>
               <Typography component='h3'
                 sx={{
                   color: 'white',
