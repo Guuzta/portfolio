@@ -58,7 +58,7 @@ export default function Home() {
               paddingY: '15px',
               paddingX: '20px',
               marginTop: '40px',
-              '&:hover' : {
+              '&:hover': {
                 backgroundColor: theme.palette.secondary.hover,
                 transition: 'all 300ms ease'
               }
@@ -76,7 +76,6 @@ export default function Home() {
               sx={{
                 color: 'white',
                 fontWeight: 'bold',
-                fontSize: '42px',
                 marginRight: '15px',
                 display: 'inline-block'
               }}
@@ -87,37 +86,36 @@ export default function Home() {
               sx={{
                 color: theme.palette.secondary.main,
                 fontWeight: 'bold',
-                fontSize: '42px'
               }}>
               Mim
             </Typography>
           </Typography>
 
-          <Typography component='p'
+          <Typography component='p' variant='h6'
             sx={{
+              fontWeight: '400',
               marginBottom: '15px',
               color: theme.palette.text.secondary,
-              width: '50%',
               lineHeight: '28px'
             }}>
             Sou estudante de Análise e Desenvolvimento de Sistemas e estou dando meus primeiros passos no mercado de tecnologia, em busca da minha primeira oportunidade.
           </Typography>
 
-          <Typography component='p'
+          <Typography component='p' variant='h6'
             sx={{
+              fontWeight: '400',
               marginBottom: '15px',
               color: theme.palette.text.secondary,
-              width: '50%',
               lineHeight: '28px'
             }}>
             Sou apaixonado por construir soluções completas e estou constantemente expandindo meus conhecimentos para me tornar um desenvolvedor. Estou aberto a oportunidades em que eu possa contribuir, aprender e crescer.
           </Typography>
 
-          <Typography component='p'
+          <Typography component='p' variant='h6'
             sx={{
+              fontWeight: '400',
               marginBottom: '15px',
               color: theme.palette.text.secondary,
-              width: '50%',
               lineHeight: '28px'
             }}>
             Para conhecer mais sobre minha experiência, habilidades e projetos, você pode conferir meu currículo completo no botão abaixo, onde reuni detalhes sobre minhas experiências práticas, tecnologias que domino e resultados alcançados em pequenos projetos web.
@@ -126,13 +124,21 @@ export default function Home() {
           <Box component='div'>
             <Button size='large'
               sx={{
-                backgroundColor: theme.palette.secondary.main,
                 color: 'white',
+                backgroundColor: theme.palette.secondary.main,
                 textTransform: 'none',
+                fontSize: '17px',
                 fontWeight: '400',
-                marginTop: '30px'
-              }}>
-              Currículo
+                paddingY: '15px',
+                paddingX: '20px',
+                marginTop: '40px',
+                '&:hover': {
+                  backgroundColor: theme.palette.secondary.hover,
+                  transition: 'all 300ms ease'
+                }
+              }}
+            >
+              CURRÍCULO
             </Button>
           </Box>
         </Container>
