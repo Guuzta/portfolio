@@ -18,7 +18,8 @@ const theme = createTheme({
             main: '#111111'
         },
         secondary: {
-            main: '#EAB308'
+            main: '#EAB308',
+            hover: '#d38609ff'
         },
         text: {
             primary: '#000000',

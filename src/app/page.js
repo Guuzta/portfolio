@@ -38,20 +38,33 @@ export default function Home() {
 
       <Container id='Home' component='section' maxWidth='md' sx={{ paddingTop: '160px', paddingBottom: '96px' }}>
         <Box component='div' sx={{ textAlign: 'center' }}>
-          <Typography component='h1' variant='h3' sx={{ fontWeight: 'bold' }}>
+          <Typography component='h1' variant='h2' sx={{ fontWeight: 'bold' }}>
             GUSTAVO BODZIAK
           </Typography>
 
-          <Typography component='span' sx={{ color: '#EAB308', display: 'block', marginY: '18px' }}>
+          <Typography component='span' variant='h6' sx={{ color: '#EAB308', display: 'block', marginY: '18px' }}>
             Estudante | Next.js · React · Node · MongoDB
           </Typography>
 
-          <Typography component='p' sx={{ color: theme.palette.text.secondary, lineHeight: '28px' }}>
+          <Typography component='p' variant='h6' sx={{ color: theme.palette.text.secondary, fontWeight: '400' }}>
             Tenho experiência desenvolvendo aplicações web completas, utilizando Next.js no Frontend para criar interfaces modernas, responsivas e intuitivas, garantindo uma ótima experiência para o usuário. No Backend, trabalho com Node.js e MongoDB, implementando a lógica das aplicações, cuidando da estrutura de dados e garantindo que tudo funcione de forma integrada e eficiente.
           </Typography>
 
-          <Button size='large' sx={{ backgroundColor: theme.palette.secondary.main, textTransform: 'none', fontWeight: '400', marginTop: '20px' }}>
-            Projetos
+          <Button size='large'
+            sx={{
+              backgroundColor: theme.palette.secondary.main,
+              textTransform: 'none',
+              fontSize: '17px',
+              paddingY: '15px',
+              paddingX: '20px',
+              marginTop: '40px',
+              '&:hover' : {
+                backgroundColor: theme.palette.secondary.hover,
+                transition: 'all 300ms ease'
+              }
+            }}
+          >
+            PROJETOS
           </Button>
         </Box>
       </Container>
