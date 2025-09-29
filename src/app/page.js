@@ -402,9 +402,7 @@ export default function Home() {
           </Typography>
 
           <Typography component='p' sx={{ color: theme.palette.text.secondary, width: '470px', margin: '0 auto', lineHeight: '28px' }}>
-            There are many variations of passages ofLorem Ipsum
-            available, but the majority havesuffered alteration in some
-            form, by injected humour,
+            Se quiser entrar em contato ou conhecer mais sobre meu trabalho, fique à vontade para me chamar no LinkedIn ou dar uma olhada nos meus projetos no GitHub.
           </Typography>
         </Box>
 
