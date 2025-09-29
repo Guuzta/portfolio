@@ -27,6 +27,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
+import { MdLaunch } from "react-icons/md";
 
 export default function Home() {
 
@@ -223,7 +224,6 @@ export default function Home() {
                 sx={{
                   color: 'white',
                   fontWeight: 'bold',
-                  fontSize: '42px',
                   marginRight: '15px',
                   display: 'inline-block'
                 }}
@@ -234,31 +234,30 @@ export default function Home() {
                 sx={{
                   color: theme.palette.secondary.main,
                   fontWeight: 'bold',
-                  fontSize: '42px'
                 }}>
                 Projetos
               </Typography>
             </Typography>
 
-            <Typography component='p' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px' }}>
+            <Typography component='p' variant='h6' sx={{ color: theme.palette.text.secondary, margin: '0 auto', lineHeight: '28px', fontWeight: '400' }}>
               Aqui você encontrará alguns projetos que criei ao longo da minha jornada de estudos e aprendizado.
             </Typography>
           </Box>
 
-          <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginTop: '100px', marginBottom: '180px', display: 'flex', justifyContent: 'space-between' }}>
+          <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginY: '180px', display: 'flex', justifyContent: 'space-between' }}>
             <CardMedia
               component='img'
               height="250"
               image="/images/primeiroProjeto.png"
-              title="green iguana"
+              title="notebook"
               sx={{ width: 'fit-content' }}
             />
 
-            <CardContent sx={{ width: '50%' }}>
+            <Box sx={{ display: 'flex', flexDirection:'column', justifyContent: 'center', width: '50%', paddingY: '0' }}>
               <Typography component='h3'
                 sx={{
                   color: 'white',
-                  fontSize: 26,
+                  fontSize: '35px',
                   fontWeight: 'bold',
                   marginBottom: '12px'
                 }}
@@ -266,141 +265,30 @@ export default function Home() {
                 Contador de Cliques
               </Typography>
 
-              <Typography component='p' sx={{ color: theme.palette.text.secondary, lineHeight: '28px' }}>
+              <Typography component='p' sx={{ color: theme.palette.text.secondary, fontSize: '18px' }}>
                 Plataforma onde consiste basicamente em registrar o maior número de cliques feito pelo usuário.
               </Typography>
 
-              <Button size='large'
-                sx={{
-                  backgroundColor: theme.palette.secondary.main,
-                  color: 'white',
-                  textTransform: 'none',
-                  fontWeight: '400',
-                  marginTop: '30px'
-                }}>
-                Estudo de caso
-              </Button>
-            </CardContent>
-          </Card>
 
-          <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginY: '180px', display: 'flex', justifyContent: 'space-between' }}>
-            <CardMedia
-              component='img'
-              height="250"
-              image="/images/notebook.png"
-              title="green iguana"
-              sx={{ width: 'fit-content' }}
-            />
-
-            <CardContent sx={{ width: '50%' }}>
-              <Typography component='h3'
-                sx={{
-                  color: 'white',
-                  fontSize: 26,
-                  fontWeight: 'bold',
-                  marginBottom: '12px'
-                }}
-              >
-                Projeto de exemplo
-              </Typography>
-
-              <Typography component='p' sx={{ color: theme.palette.text.secondary, lineHeight: '28px' }}>
-                There are many variations of passages ofLorem Ipsum
-                available, but the majority havesuffered alteration in some
-                form, by injected humour,
-              </Typography>
-
-              <Button size='large'
-                sx={{
-                  backgroundColor: theme.palette.secondary.main,
-                  color: 'white',
-                  textTransform: 'none',
-                  fontWeight: '400',
-                  marginTop: '30px'
-                }}>
-                Estudo de caso
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginY: '180px', display: 'flex', justifyContent: 'space-between' }}>
-            <CardMedia
-              component='img'
-              height="250"
-              image="/images/notebook.png"
-              title="green iguana"
-              sx={{ width: 'fit-content' }}
-            />
-
-            <CardContent sx={{ width: '50%' }}>
-              <Typography component='h3'
-                sx={{
-                  color: 'white',
-                  fontSize: 26,
-                  fontWeight: 'bold',
-                  marginBottom: '12px'
-                }}
-              >
-                Projeto de exemplo
-              </Typography>
-
-              <Typography component='p' sx={{ color: theme.palette.text.secondary, lineHeight: '28px' }}>
-                There are many variations of passages ofLorem Ipsum
-                available, but the majority havesuffered alteration in some
-                form, by injected humour,
-              </Typography>
-
-              <Button size='large'
-                sx={{
-                  backgroundColor: theme.palette.secondary.main,
-                  color: 'white',
-                  textTransform: 'none',
-                  fontWeight: '400',
-                  marginTop: '30px'
-                }}>
-                Estudo de caso
-              </Button>
-            </CardContent>
-          </Card>
-
-          <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginTop: '180px', display: 'flex', justifyContent: 'space-between' }}>
-            <CardMedia
-              component='img'
-              height="250"
-              image="/images/notebook.png"
-              title="green iguana"
-              sx={{ width: 'fit-content' }}
-            />
-
-            <CardContent sx={{ width: '50%' }}>
-              <Typography component='h3'
-                sx={{
-                  color: 'white',
-                  fontSize: 26,
-                  fontWeight: 'bold',
-                  marginBottom: '12px'
-                }}
-              >
-                Projeto de exemplo
-              </Typography>
-
-              <Typography component='p' sx={{ color: theme.palette.text.secondary, lineHeight: '28px' }}>
-                There are many variations of passages ofLorem Ipsum
-                available, but the majority havesuffered alteration in some
-                form, by injected humour,
-              </Typography>
-
-              <Button size='large'
-                sx={{
-                  backgroundColor: theme.palette.secondary.main,
-                  color: 'white',
-                  textTransform: 'none',
-                  fontWeight: '400',
-                  marginTop: '30px'
-                }}>
-                Estudo de caso
-              </Button>
-            </CardContent>
+              <Link href='/contador-de-cliques' target='_blank'>
+                <Button size='large'
+                  sx={{
+                    backgroundColor: theme.palette.secondary.main,
+                    marginTop: '30px',
+                    fontSize: '14px',
+                    gap: '5px',
+                    padding: '15px',
+                    '&:hover': {
+                      backgroundColor: theme.palette.secondary.hover,
+                      transition: 'all 300ms ease'
+                    }
+                  }}
+                >
+                  <MdLaunch size={25} />
+                  PROJETO
+                </Button>
+              </Link>
+            </Box>
           </Card>
 
         </Container>
