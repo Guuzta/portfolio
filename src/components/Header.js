@@ -13,13 +13,17 @@ import {
     MenuItem,
 } from '@mui/material'
 
-import { useTheme } from '@mui/material/styles';
+import Sidebar from './Sidebar';
 
-const pages = ['Home', 'Sobre', 'Habilidades', 'Projetos', 'Contato']
+import { useTheme, useMediaQuery } from '@mui/material';
 
 const Header = () => {
 
     const theme = useTheme()
+
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'))
+
+    const pages = ['Home', 'Sobre', 'Habilidades', 'Projetos', 'Contato']
 
     return (
         <Box sx={{ flexGrow: 1, }}>
@@ -38,28 +42,33 @@ const Header = () => {
                             </Typography>
                         </Box>
                         {
-                            pages.map(page => {
+                            isMobile ? (
+                                <Sidebar />
+                            ) : (
+                                    pages.map(page => {
 
-                                const pageCapital = page.toUpperCase()
+                                    const pageCapital = page.toUpperCase()
 
-                                return (
-                                    <Link href={`/#${page}`} key={page}>
-                                        <MenuItem
-                                            sx={{
-                                                "&:hover": {
-                                                    "& .MuiTypography-root": {
-                                                        color: theme.palette.secondary.main
+                                    return (
+                                        <Link href={`/#${page}`} key={page}>
+                                            <MenuItem
+                                                sx={{
+                                                    "&:hover": {
+                                                        "& .MuiTypography-root": {
+                                                            color: theme.palette.secondary.main
+                                                        }
                                                     }
-                                                }
-                                            }}
-                                        >
-                                            <Typography sx={{ transition: 'all 300ms ease' }}>
-                                                {pageCapital}
-                                            </Typography>
-                                        </MenuItem>
-                                    </Link>
-                                )
-                            })
+                                                }}
+                                            >
+                                                <Typography sx={{ transition: 'all 300ms ease' }}>
+                                                    {pageCapital}
+                                                </Typography>
+                                            </MenuItem>
+                                        </Link>
+                                    )
+                                })
+                            )
+
                         }
                     </Toolbar>
                 </Container>
