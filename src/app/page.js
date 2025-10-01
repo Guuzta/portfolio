@@ -128,24 +128,26 @@ export default function Home() {
           </Typography>
 
           <Box component='div'>
-            <Button size='large'
-              sx={{
-                color: 'white',
-                backgroundColor: theme.palette.secondary.main,
-                textTransform: 'none',
-                fontSize: '17px',
-                fontWeight: '400',
-                paddingY: '15px',
-                paddingX: '20px',
-                marginTop: '40px',
-                '&:hover': {
-                  backgroundColor: theme.palette.secondary.hover,
-                  transition: 'all 300ms ease'
-                }
-              }}
-            >
-              CURRÍCULO
-            </Button>
+            <MuiLink href='/curriculo.pdf' download>
+              <Button size='large'
+                sx={{
+                  color: 'white',
+                  backgroundColor: theme.palette.secondary.main,
+                  textTransform: 'none',
+                  fontSize: '17px',
+                  fontWeight: '400',
+                  paddingY: '15px',
+                  paddingX: '20px',
+                  marginTop: '40px',
+                  '&:hover': {
+                    backgroundColor: theme.palette.secondary.hover,
+                    transition: 'all 300ms ease'
+                  }
+                }}
+              >
+                CURRÍCULO
+              </Button>
+            </MuiLink>
           </Box>
         </Container>
       </Container>
