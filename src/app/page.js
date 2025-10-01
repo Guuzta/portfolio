@@ -14,7 +14,7 @@ import {
   Container,
   Card,
   CardMedia,
-  CardContent,
+  Grid,
   Typography,
   Link as MuiLink,
 } from '@mui/material'
@@ -164,59 +164,57 @@ export default function Home() {
           </Typography>
         </Box>
 
-        <Box component='div'
-          sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            marginTop: '56px',
-            gap: '30px'
-          }}
-        >
-          <SkillCard
-            Icon={RiNextjsFill}
-            title='Next.js'
-            text='Experiência no desenvolvimento de aplicações modernas com foco em performance, SEO e renderização híbrida (SSR/SSG).'
-          />
+        <Grid container spacing={4} sx={{ marginTop: '56px' }}>
 
-          <SkillCard
-            Icon={FaReact}
-            title='React'
-            text='Criação de interfaces dinâmicas e componentizadas, garantindo escalabilidade e boa experiência do usuário.'
-          />
+          <Grid size={{ sm: 12, md: 6, lg: 4 }}>
+            <SkillCard
+              Icon={RiNextjsFill}
+              title='Next.js'
+              text='Experiência no desenvolvimento de aplicações modernas com foco em performance, SEO e renderização híbrida (SSR/SSG).'
+            />
+          </Grid>
 
-          <SkillCard
-            Icon={FaNodeJs}
-            title='Node'
-            text='Desenvolvimento de APIs e backends eficientes, com foco em performance e integração entre serviços.'
-          />
-        </Box>
+          <Grid size={{ sm: 12, md: 6, lg: 4 }}>
+            <SkillCard
+              Icon={FaReact}
+              title='React'
+              text='Criação de interfaces dinâmicas e componentizadas, garantindo escalabilidade e boa experiência do usuário.'
+            />
+          </Grid>
 
-        <Box component='div'
-          sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            marginTop: '56px',
-            gap: '30px'
-          }}
-        >
-          <SkillCard
-            Icon={FaGitAlt}
-            title='Git'
-            text='Controle de versão e colaboração em equipe, utilizando boas práticas de branchs e versionamento de código.'
-          />
+          <Grid size={{ sm: 12, md: 6, lg: 4 }}>
+            <SkillCard
+              Icon={FaNodeJs}
+              title='Node'
+              text='Desenvolvimento de APIs e backends eficientes, com foco em performance e integração entre serviços.'
+            />
+          </Grid>
 
-          <SkillCard
-            Icon={SiPostman}
-            title='Postman'
-            text='Testes, validação e documentação de APIs REST, facilitando a integração entre frontend e backend.'
-          />
+          <Grid size={{ sm: 12, md: 6, lg: 4 }}>
+            <SkillCard
+              Icon={FaGitAlt}
+              title='Git'
+              text='Controle de versão e colaboração em equipe, utilizando boas práticas de branchs e versionamento de código.'
+            />
+          </Grid>
 
-          <SkillCard
-            Icon={IoLogoJavascript}
-            title='JavaScript'
-            text='Conhecimento prático da linguagem para construir aplicações interativas, tanto no frontend quanto no backend.'
-          />
-        </Box>
+          <Grid size={{ sm: 12, md: 6, lg: 4 }}>
+            <SkillCard
+              Icon={SiPostman}
+              title='Postman'
+              text='Testes, validação e documentação de APIs REST, facilitando a integração entre frontend e backend.'
+            />
+          </Grid>
+
+          <Grid size={{ sm: 12, md: 6, lg: 4 }}>
+            <SkillCard
+              Icon={IoLogoJavascript}
+              title='JavaScript'
+              text='Conhecimento prático da linguagem para construir aplicações interativas, tanto no frontend quanto no backend.'
+            />
+          </Grid>
+
+        </Grid>
       </Container>
 
       <Container id='Projetos' component='section' maxWidth={false} sx={{ paddingY: '96px', backgroundColor: theme.palette.primary.main }}>

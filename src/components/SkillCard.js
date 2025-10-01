@@ -13,8 +13,8 @@ const SkillCard = ({ Icon, title, text }) => {
                 textAlign: 'center',
                 paddingY: '52px',
                 paddingX: '32px',
-                width: '50% ',
                 minHeight: '330px',
+                height: '100%',
                 borderRadius: '10px'
             }}
         >
