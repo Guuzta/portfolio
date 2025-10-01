@@ -34,9 +34,7 @@ const Footer = () => {
                         width: '50%' 
                     }}
                 >
-                    There are many variations of passages ofLorem Ipsum
-                    available, but the majority havesuffered alteration in some
-                    form, by injected humour,
+                    Atualmente estudante de Análise e Desenvolvimento de Sistemas e em busca da minha primeira oportunidade de emprego no mercado de tecnologia.
                 </Typography>
 
                 <Divider sx={{ borderColor: '#333',  marginTop: '96px', marginBottom: '20px'}}/>
