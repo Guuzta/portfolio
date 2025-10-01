@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SkillCard from "@/components/SkillCard";
 
-import { useTheme } from '@mui/material/styles';
+import { useTheme, useMediaQuery } from '@mui/material';
 
 import {
   Box,
@@ -32,6 +32,8 @@ import { MdLaunch } from "react-icons/md";
 export default function Home() {
 
   const theme = useTheme()
+
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'))
 
   return (
     <>
@@ -247,15 +249,27 @@ export default function Home() {
           </Box>
 
           <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginY: '180px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <CardMedia
-              component='img'
-              height="290"
-              image="/images/primeiroProjeto.png"
-              title="notebook"
-              sx={{ width: 'fit-content' }}
-            />
+            {
+              isMobile ? (
+                <CardMedia
+                  component='img'
+                  height="200"
+                  image="/images/primeiroProjeto.png"
+                  title="notebook"
+                  sx={{ width: 'fit-content' }}
+                />
+              ) : (
+                <CardMedia
+                  component='img'
+                  height="340"
+                  image="/images/primeiroProjeto.png"
+                  title="notebook"
+                  sx={{ width: 'fit-content' }}
+                />
+              )
+            }
 
-            <Box sx={{ textAlign: 'center',  paddingY: '0', marginTop: '40px' }}>
+            <Box sx={{ textAlign: 'center', paddingY: '0', marginTop: '40px' }}>
               <Typography component='h3'
                 sx={{
                   color: 'white',
