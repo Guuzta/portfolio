@@ -219,6 +219,7 @@ export default function Home() {
 
       <Container id='Projetos' component='section' maxWidth={false} sx={{ paddingY: '96px', backgroundColor: theme.palette.primary.main }}>
         <Container component='div' maxWidth='lg'>
+
           <Box component='div' sx={{ textAlign: 'center' }}>
             <Typography component='h2' sx={{ marginBottom: '30px' }}>
               <Typography component='span' variant='h3'
@@ -245,16 +246,16 @@ export default function Home() {
             </Typography>
           </Box>
 
-          <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginY: '180px', display: 'flex', justifyContent: 'space-between' }}>
+          <Card sx={{ backgroundColor: 'transparent', boxShadow: 'none', marginY: '180px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <CardMedia
               component='img'
-              height="250"
+              height="290"
               image="/images/primeiroProjeto.png"
               title="notebook"
               sx={{ width: 'fit-content' }}
             />
 
-            <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '50%', paddingY: '0' }}>
+            <Box sx={{ textAlign: 'center',  paddingY: '0', marginTop: '40px' }}>
               <Typography component='h3'
                 sx={{
                   color: 'white',
