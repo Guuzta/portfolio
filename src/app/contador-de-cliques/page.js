@@ -3,7 +3,7 @@
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 
-import { useTheme } from '@mui/material/styles';
+import { useTheme, useMediaQuery } from '@mui/material';
 
 import {
     Button,
@@ -31,11 +31,13 @@ const Contador = () => {
 
     const theme = useTheme()
 
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'))
+
     return (
         <>
             <Header />
 
-            <Container component='section' maxWidth='md' sx={{ paddingY: '96px' }}>
+            <Container component='section' maxWidth='md' sx={{ paddingTop: '160px', paddingBottom: '96px' }}>
                 <Box component='div' sx={{ textAlign: 'center' }}>
                     <Typography component='h1' variant='h2'
                         sx={{
@@ -94,16 +96,31 @@ const Contador = () => {
             </Container>
 
             <Container component='section' maxWidth='lg' sx={{ paddingY: '96px' }}>
-                <CardMedia
-                    component='img'
-                    height="340"
-                    image="/images/primeiroProjeto.png"
-                    title="notebook"
-                    sx={{
-                        width: 'fit-content',
-                        margin: '0 auto'
-                    }}
-                />
+                {
+                    isMobile ? (
+                        <CardMedia
+                            component='img'
+                            height="200"
+                            image="/images/primeiroProjeto.png"
+                            title="notebook"
+                            sx={{
+                                width: 'fit-content',
+                                margin: '0 auto'
+                            }}
+                        />
+                    ) : (
+                        <CardMedia
+                            component='img'
+                            height="340"
+                            image="/images/primeiroProjeto.png"
+                            title="notebook"
+                            sx={{
+                                width: 'fit-content',
+                                margin: '0 auto'
+                            }}
+                        />
+                    )
+                }
 
                 <Box sx={{ width: 'fit-content', borderBottom: '1px solid #EAB308', marginTop: '50px' }}>
                     <Typography component='h2' sx={{ fontSize: '28px', fontWeight: 'bold' }}>
@@ -204,97 +221,194 @@ const Contador = () => {
 
 
 
-                <Box sx={{ display: 'flex', gap: '10px' }}>
-                    <Card
-                        sx={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '5px',
-                            backgroundColor: theme.palette.background.card,
-                            minWidth: '130px',
-                            padding: '10px'
-                        }}
-                    >
-                        <FaHtml5 size={30} color={theme.palette.secondary.main} />
+                {
+                    isMobile ? (
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                            <Card
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '5px',
+                                    backgroundColor: theme.palette.background.card,
+                                    minWidth: '130px',
+                                    padding: '10px'
+                                }}
+                            >
+                                <FaHtml5 size={30} color={theme.palette.secondary.main} />
 
-                        <Typography component='span' variant='body1' sx={{ color: 'white' }}>
-                            HTML
-                        </Typography>
-                    </Card>
+                                <Typography component='span' variant='body1' sx={{ color: 'white' }}>
+                                    HTML
+                                </Typography>
+                            </Card>
 
-                    <Card
-                        sx={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '5px',
-                            backgroundColor: theme.palette.background.card,
-                            minWidth: '130px',
-                            padding: '10px'
-                        }}
-                    >
-                        <FaCss3Alt size={30} color={theme.palette.secondary.main} />
+                            <Card
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '5px',
+                                    backgroundColor: theme.palette.background.card,
+                                    minWidth: '130px',
+                                    padding: '10px'
+                                }}
+                            >
+                                <FaCss3Alt size={30} color={theme.palette.secondary.main} />
 
-                        <Typography component='span' variant='body1' sx={{ color: 'white' }}>
-                            CSS
-                        </Typography>
-                    </Card>
+                                <Typography component='span' variant='body1' sx={{ color: 'white' }}>
+                                    CSS
+                                </Typography>
+                            </Card>
 
-                    <Card
-                        sx={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '5px',
-                            backgroundColor: theme.palette.background.card,
-                            minWidth: '130px',
-                            padding: '10px'
-                        }}
-                    >
-                        <IoLogoJavascript size={30} color={theme.palette.secondary.main} />
+                            <Card
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '5px',
+                                    backgroundColor: theme.palette.background.card,
+                                    minWidth: '130px',
+                                    padding: '10px'
+                                }}
+                            >
+                                <IoLogoJavascript size={30} color={theme.palette.secondary.main} />
 
-                        <Typography component='span' variant='body1' sx={{ color: 'white' }}>
-                            JavaScript
-                        </Typography>
-                    </Card>
+                                <Typography component='span' variant='body1' sx={{ color: 'white' }}>
+                                    JavaScript
+                                </Typography>
+                            </Card>
 
-                    <Card
-                        sx={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '5px',
-                            backgroundColor: theme.palette.background.card,
-                            minWidth: '130px',
-                            padding: '10px'
-                        }}
-                    >
-                        <FaNodeJs size={30} color={theme.palette.secondary.main} />
+                            <Card
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '5px',
+                                    backgroundColor: theme.palette.background.card,
+                                    minWidth: '130px',
+                                    padding: '10px'
+                                }}
+                            >
+                                <FaNodeJs size={30} color={theme.palette.secondary.main} />
 
-                        <Typography component='span' variant='body1' sx={{ color: 'white' }}>
-                            NodeJS
-                        </Typography>
-                    </Card>
+                                <Typography component='span' variant='body1' sx={{ color: 'white' }}>
+                                    NodeJS
+                                </Typography>
+                            </Card>
 
-                    <Card
-                        sx={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '5px',
-                            backgroundColor: theme.palette.background.card,
-                            minWidth: '130px',
-                            padding: '10px'
-                        }}
-                    >
-                        <VscVscode size={30} color={theme.palette.secondary.main} />
+                            <Card
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '5px',
+                                    backgroundColor: theme.palette.background.card,
+                                    minWidth: '130px',
+                                    padding: '10px'
+                                }}
+                            >
+                                <VscVscode size={30} color={theme.palette.secondary.main} />
 
-                        <Typography component='span' variant='body1' sx={{ color: 'white' }}>
-                            VsCode
-                        </Typography>
-                    </Card>
-                </Box>
+                                <Typography component='span' variant='body1' sx={{ color: 'white' }}>
+                                    VsCode
+                                </Typography>
+                            </Card>
+                        </Box>
+                    ) : (
+                        <Box sx={{ display: 'flex', gap: '10px' }}>
+                            <Card
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '5px',
+                                    backgroundColor: theme.palette.background.card,
+                                    minWidth: '130px',
+                                    padding: '10px'
+                                }}
+                            >
+                                <FaHtml5 size={30} color={theme.palette.secondary.main} />
+
+                                <Typography component='span' variant='body1' sx={{ color: 'white' }}>
+                                    HTML
+                                </Typography>
+                            </Card>
+
+                            <Card
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '5px',
+                                    backgroundColor: theme.palette.background.card,
+                                    minWidth: '130px',
+                                    padding: '10px'
+                                }}
+                            >
+                                <FaCss3Alt size={30} color={theme.palette.secondary.main} />
+
+                                <Typography component='span' variant='body1' sx={{ color: 'white' }}>
+                                    CSS
+                                </Typography>
+                            </Card>
+
+                            <Card
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '5px',
+                                    backgroundColor: theme.palette.background.card,
+                                    minWidth: '130px',
+                                    padding: '10px'
+                                }}
+                            >
+                                <IoLogoJavascript size={30} color={theme.palette.secondary.main} />
+
+                                <Typography component='span' variant='body1' sx={{ color: 'white' }}>
+                                    JavaScript
+                                </Typography>
+                            </Card>
+
+                            <Card
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '5px',
+                                    backgroundColor: theme.palette.background.card,
+                                    minWidth: '130px',
+                                    padding: '10px'
+                                }}
+                            >
+                                <FaNodeJs size={30} color={theme.palette.secondary.main} />
+
+                                <Typography component='span' variant='body1' sx={{ color: 'white' }}>
+                                    NodeJS
+                                </Typography>
+                            </Card>
+
+                            <Card
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '5px',
+                                    backgroundColor: theme.palette.background.card,
+                                    minWidth: '130px',
+                                    padding: '10px'
+                                }}
+                            >
+                                <VscVscode size={30} color={theme.palette.secondary.main} />
+
+                                <Typography component='span' variant='body1' sx={{ color: 'white' }}>
+                                    VsCode
+                                </Typography>
+                            </Card>
+                        </Box>
+                    )
+                }
+
             </Container>
 
             <Footer />
